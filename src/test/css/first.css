@@ -1,0 +1,60 @@
+p {
+    color: cornflowerblue;
+    text-align: center;
+}
+
+.lef-border2 {
+    border-left: 15px solid #f41717;
+    background-color: #8fc5f3;
+}
+
+.lef-border {
+    border-left-width: 30px;
+    border-left-color: #d41717;
+    border-left-style: dashed;
+}
+
+
+#img-div {
+    background-image: url("../../assets/logo512.png");
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 500px;
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+p.rb {
+    border-right: 7px solid #065206;
+    background-color: #b0e0ff;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-align: right;
+    margin: 100px 20px 20px;
+
+}
+
+/*image {*/
+/*    width: 400px;*/
+/*    height: 400px*/
+/*}*/
+
+/*h2 {*/
+/*    margin: 30px;*/
+/*    background: yellow;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 7px;*/
+/*    line-height: 100px;*/
+/*}*/
+
+h2.ol-radius {
+    outline: 3px solid red;
+    outline-offset: 12px;
+
+
+}
+
+

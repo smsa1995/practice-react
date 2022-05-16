@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>this is title one </h1>
+<h1 id="h1_id"></h1>
+<p id="p_id"></p>
+<input type="checkbox">
+<select>
+    <option label="asd" name="asd" value="asd"></option>
+    <option label="asd2" name="asd" value="asd"></option>
+    <option label="asd3" name="asd" value="asd"></option>
+</select>
+<script>
+
+
+    function print(variable) {
+        console.log("variable: " + variable)
+    }
+
+    const mixArr = [1, 2, 3, "", 2.1, {count: 19}]
+    const names = ["ali", "mohamad", "javad", "mostafaa"]
+    const numbers = [1, 2, 3, 4]
+
+    const getPerson = function (name, age, city = "yazd") {
+        return {
+            name,
+            ['City']: city,
+            age,
+            car: "207",
+            toString() {
+                return `name: ${this.name}, city: ${this.City}, car: ${this.car}, age: ${this.age}`
+            }
+        }
+    }
+
+    p = new getPerson("mostafa", 25, "tehran")
+    print(p.toString())//prints object(ok)
+
+    function* te() {
+        yield 1
+        yield 2
+        yield 1
+    }
+
+    const name = "   "
+    if (name.trim()) {
+        console.log("name not empty")
+    } else {
+        console.log("name empty")
+    }
+
+    function s(name = "", age = 1, id) {
+        print("name: " + name, " age: " + age + " id: " + id)
+    }
+
+    // s(age=26, name="smsa") /error
+
+    const TodoList = ({todos, deleteTodo}) => {
+        print("this is todo: " + todos + " this is deleteTodo: " + deleteTodo)
+    }
+
+    TodoList("first", "second")
+
+
+    const person = {
+        name: "ali"
+    }
+
+    const tweet = {
+        content: "tweet content",
+        likes: 0,
+        id: 123123
+    }
+
+
+    function printTweet(newTweet) {
+        const {content} = newTweet
+        console.log({content: newTweet})
+    }
+
+    printTweet(tweet)
+
+
+</script>
+</body>
+</html>
+
